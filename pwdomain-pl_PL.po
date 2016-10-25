@@ -1,0 +1,420 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Premium Post v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-02-20 12:41:23+0000\n"
+"Last-Translator: Konrad Karpieszuk <kkarpieszuk@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: POLAND\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: premiumpost.php:71
+#@ pwdomain
+msgid "Premium Post plugin settings"
+msgstr "Ustawienia wtyczki Premium Post"
+
+#: premiumpost.php:88
+#@ pwdomain
+msgid "Settings of form page"
+msgstr "Ustawienia strony formularza"
+
+#: premiumpost.php:90
+#@ pwdomain
+msgid "Terms and conditions"
+msgstr "Regulamin"
+
+#: premiumpost.php:92
+#@ pwdomain
+msgid "Settings relative to price"
+msgstr "Ustawienia związane z ceną"
+
+#: premiumpost.php:93
+#@ pwdomain
+msgid "Base price for publish"
+msgstr "Podstawowa cena publikacji"
+
+#: premiumpost.php:94
+#@ pwdomain
+msgid "Price for links in text"
+msgstr "Cena za odnośniki w treści"
+
+#: premiumpost.php:95
+#@ pwdomain
+msgid "Price for additional categories"
+msgstr "Cena za dodatkowe kategorie"
+
+#: premiumpost.php:97
+#@ pwdomain
+msgid "Other important settings"
+msgstr "Inne ważne ustawienia"
+
+#: premiumpost.php:98
+#@ pwdomain
+msgid "Add article as post type"
+msgstr "Dodaj artykuł jako typ wpisu"
+
+#: premiumpost.php:99
+#@ pwdomain
+msgid "Publisher can connect his post with taxonomy"
+msgstr "Publikujący może dodać swojemu wpisowi taksonomię"
+
+#: premiumpost.php:100
+#@ pwdomain
+msgid "After payment change post status to"
+msgstr "Po zapłacie zmień status wpisu na"
+
+#: premiumpost.php:101
+#@ pwdomain
+msgid "Send remind to author"
+msgstr "Wyślij przypomnienie autorowi"
+
+#: premiumpost.php:103
+#@ pwdomain
+msgid "Payment service"
+msgstr "Pośrednik płatności"
+
+#: premiumpost.php:104
+#@ pwdomain
+msgid "ID in transferuj.pl service"
+msgstr "Identyfikator w systemie transferuj.pl"
+
+#: premiumpost.php:178
+#@ pwdomain
+msgid "PLN for"
+msgstr "PLN za"
+
+#: premiumpost.php:180
+#: premiumpost.php:501
+#@ pwdomain
+msgid "days"
+msgstr "dni"
+
+#: premiumpost.php:195
+#@ pwdomain
+msgid "PLN for every single link (type 0 if free)"
+msgstr "PLN za każdy odnośnik (wpisz 0 jeśli darmowe)"
+
+#: premiumpost.php:212
+#@ pwdomain
+msgid "PLN for every additional category (type 0 if free, first category is always free"
+msgstr "PLN za każdą dodatkową kategorię (wpisz 0 jeśli darmowe, pierwsza kategoria jest zawsze darmowa)"
+
+#: premiumpost.php:323
+#@ pwdomain
+msgid "days before article expiration date"
+msgstr "dni przed terminem zakończenia publikacji"
+
+#: premiumpost.php:389
+#@ pwdomain
+msgid "Post title is empty <br>"
+msgstr "Tytuł wpisu jest pusty<br>"
+
+#: premiumpost.php:391
+#@ pwdomain
+msgid "Post content is empty<br>"
+msgstr "Treść wpisu jest pusta<br>"
+
+#: premiumpost.php:393
+#@ pwdomain
+msgid "Error when tried to save post draft, please try again<br>"
+msgstr "Błąd podczas próby zapisania szkicu wpisu, spróbuj jeszcze raz<br>"
+
+#: premiumpost.php:395
+#@ pwdomain
+msgid "Error with email address<br>"
+msgstr "Błąd w adresie email<br>"
+
+#: premiumpost.php:397
+#@ pwdomain
+msgid "You have to accept terms<br>"
+msgstr "Musisz zaakceptować regulamin<br>"
+
+#: premiumpost.php:442
+#@ pwdomain
+msgid "Main category"
+msgstr "Kategoria główna"
+
+#: premiumpost.php:452
+#@ pwdomain
+msgid "Second category"
+msgstr "Druga kategoria"
+
+#: premiumpost.php:452
+#@ pwdomain
+msgid "(Additional payment"
+msgstr "(Dodatkowa opłata"
+
+#: premiumpost.php:452
+#@ pwdomain
+msgid "PLN)"
+msgstr "PLN)"
+
+#: premiumpost.php:454
+#@ pwdomain
+msgid "none"
+msgstr "brak"
+
+#: premiumpost.php:475
+#@ pwdomain
+msgid "Email"
+msgstr "Email"
+
+#: premiumpost.php:483
+#@ pwdomain
+msgid "Post title"
+msgstr "Tytuł wpisu"
+
+#: premiumpost.php:488
+#@ pwdomain
+msgid "Content"
+msgstr "Treść"
+
+#: premiumpost.php:490
+#@ pwdomain
+msgid "Letters"
+msgstr "Znaków"
+
+#: premiumpost.php:490
+#@ pwdomain
+msgid "Links"
+msgstr "Odnośników"
+
+#: premiumpost.php:490
+#@ pwdomain
+msgid "Price per link"
+msgstr "Cena za odnośnik"
+
+#: premiumpost.php:490
+#@ pwdomain
+msgid "PLN"
+msgstr "PLN"
+
+#: premiumpost.php:501
+#@ pwdomain
+msgid "Total price:"
+msgstr "Do zapłaty:"
+
+#: premiumpost.php:501
+#@ pwdomain
+msgid "PLN. Publication for "
+msgstr "PLN. Publikacja na "
+
+#: premiumpost.php:503
+#@ pwdomain
+msgid "Go to payment"
+msgstr "Przejdź do płatności"
+
+#: premiumpost.php:838
+#@ pwdomain
+msgid "Your post will be removed soon"
+msgstr "Twój wpis zostanie niedługo usunięty"
+
+#: premiumpost.php:839
+#: premiumpost.php:882
+#@ pwdomain
+msgid "Hello,"
+msgstr "Witaj,"
+
+#: premiumpost.php:841
+#@ pwdomain
+msgid "Soon your post"
+msgstr "Niedługo Twój wpis"
+
+#: premiumpost.php:841
+#@ pwdomain
+msgid "will be removed"
+msgstr "zostanie usunięty"
+
+#: premiumpost.php:843
+#: premiumpost.php:886
+#@ pwdomain
+msgid "Do you want to extend publication?"
+msgstr "Chcesz przedłużyć publikację?"
+
+#: premiumpost.php:845
+#: premiumpost.php:888
+#@ pwdomain
+msgid "Go to page"
+msgstr "Przejdź na stronę"
+
+#: premiumpost.php:845
+#: premiumpost.php:888
+#@ pwdomain
+msgid "and add it again"
+msgstr "i dodaj wpis ponownie"
+
+#: premiumpost.php:881
+#@ pwdomain
+msgid "Your post has beeen removed"
+msgstr "Twój wpis został usunięty"
+
+#: premiumpost.php:884
+#@ pwdomain
+msgid "Your post"
+msgstr "Twój wpis"
+
+#: premiumpost.php:884
+#@ pwdomain
+msgid "is removed."
+msgstr "został usunięty"
+
+#: premiumpost.php:890
+#@ pwdomain
+msgid "This is content of your post:"
+msgstr "Oto treść Twojego wpisu:"
+
+#: premiumpost.php:894
+#@ pwdomain
+msgid "(End)"
+msgstr "(Koniec)"
+
+#: premiumpost.php:896
+#@ pwdomain
+msgid "Thanks for publishing!"
+msgstr "Dziękujemy za publikację!"
+
+#: premiumpost.php:89
+#@ pwdomain
+msgid "Page for publish form"
+msgstr "Strona z formularzem publikacji"
+
+#: premiumpost.php:325
+#@ pwdomain
+msgid "Type -1 if you do not want to send it"
+msgstr "Wpisz -1 jeśli nie chcesz wysyłać maila"
+
+#: premiumpost.php:785
+#@ pwdomain
+msgid "Thank you for your payment. When payment service will send us transaction status and everything is ok according to our terms and conditions, your post will be published soon. You will be informed about this by email"
+msgstr "Dziękujemy za zapłatę. Gdy serwis transakcyjny odeśle nam informację o wpłacie i wpis będzie zgodny z naszym regulaminem, wkrótce zostanie opublikowany. Poinformujemy Cię o tym emailem."
+
+#: premiumpost.php:789
+#@ pwdomain
+msgid "(Click to close)"
+msgstr "(Kliknij aby zamknąć)"
+
+#: premiumpost.php:726
+#@ pwdomain
+msgid "Payment accepted. Post status changed."
+msgstr "Płatność zaakceptowana. Status wpisu został zmieniony."
+
+#: premiumpost.php:728
+#@ pwdomain
+msgid "Payment service got money, thank you. The new post status is"
+msgstr "Pośrednik płatności otrzymał wpłatę, dziękujemy. Nowy status wpisu to"
+
+#: premiumpost.php:667
+#@ pwdomain
+msgid "Your post is online!"
+msgstr "Twój wpis jest już w sieci!"
+
+#: premiumpost.php:668
+#@ pwdomain
+msgid "Your post is published. You can see it here: "
+msgstr "Twój wpis został opublikowany. Możesz go zobaczyć tutaj: "
+
+#: premiumpost.php:421
+#@ pwdomain
+msgid "I accept"
+msgstr "Akceptuję"
+
+#: premiumpost.php:421
+#@ pwdomain
+msgid "terms and conditions"
+msgstr "regulamin"
+
+#: premiumpost.php:139
+#@ pwdomain
+msgid "Choose page where you want to attach post publishing form. If you do not have this page, first you should create it. Tip: form will be attached to the end of the content of this page, so you can write any information about rules of publishing etc. as regular content of this page. "
+msgstr "Wybierz stronę, do której chcesz dodać formularz publikowania wpisu. Jeśli jeszcze nie masz takiej strony, musisz najpierw ją stworzyć. Wskazówka: formularz zostanie dołączony do końca normalnej treści tej strony; możesz więc wszelkie informacje, zasady publikowania itp. wpisać jako zwykłą treść wpisu."
+
+#: premiumpost.php:157
+#@ pwdomain
+msgid "Do you have any statues of publishing at your site? Paste it here. After that visitors who want to publish anything at your site will have to set checkbox that they agree to those terms. Content of the statues will be shown after clicking in automatically generated link to it."
+msgstr "Czy posiadasz regulamin publikowania na swojej witrynie? Wklej go tutaj. Gdy to zrobisz odwiedzający chcący opublikować cokolwiek będą musieli zaznaczyć opcję, że akceptują te zasady. Treść regulaminu zostanie wyświetlona po kliknięciu w automatycznie wygenerowany odnośnik do niej."
+
+#: premiumpost.php:182
+#@ pwdomain
+msgid "Simply: what is the price for publishing at your website? And how long this text will be visible? When duration pass, post will be changed into draft. If you do not want set duration, just type here huge number of days"
+msgstr "Po prostu: jaka jest cena za dodanie wpisu na Twojej stronie? I jak długo wpis ma być widoczny? Gdy termin ten minie status wpisu zostanie zmieniony na Szkic. Jeśli nie chcesz wyznaczać takiego terminu, po prostu wpisz tutaj jakąś ogromną liczbę dni."
+
+#: premiumpost.php:198
+#@ pwdomain
+msgid "Do you want to get more for every link published post? What is the price?"
+msgstr "Czy chcesz zarabiać więcej za każdy odnośnik w treści publikowanego wpisu? Ile to będzie kosztować?"
+
+#: premiumpost.php:215
+#@ pwdomain
+msgid "Publisher can attach post to one category (or other taxonomy, see below) for free. If he want to add next category, this can cost more. Type how much more here."
+msgstr "Publikujący może dodać wpis do jednej kategorii (lub innej taksonomii, zobacz poniżej) za darmo. Jeśli będzie chciał dodać do kolejnej kategorii, może to kosztować więcej. Wpisz tutaj o ile więcej. "
+
+#: premiumpost.php:248
+#@ pwdomain
+msgid "I think you know, that in WordPress you can publish posts, pages or any other custom post types. Decide here which post type should be used when somebody want to publish article. If you do not understand it, just set post type as Post and it will be probably ok."
+msgstr "Myślę, że już wiesz, że w WordPressie można publikować Wpisy, Strony i jakiekolwiek inne własne typy treści. Zdecyduj tutaj jaki typ treści ma zostać użyty gdy ktoś chce opublikować swój artykuł. Jeśli nie rozumiesz tego etapu, po prostu ustaw tu typ Wpis i wszystko powinno działać jak trzeba. "
+
+#: premiumpost.php:284
+#@ pwdomain
+msgid "If little above you choosed that published article has post type Post, you should choose here taxonomy Category. If your page uses other post types and other taxonomies, you can choose them here."
+msgstr "Jeśli powyżej zdecydowano, że wpisy publikują się jako typ Wpis, powinieneś tutaj wybrać taksonomię Kategoria. Jeśli Twoja strona używa innych typów wpisów i innych taksonomii, może je wybrać tutaj. "
+
+#: premiumpost.php:310
+#@ pwdomain
+msgid "If you really trust your publishers, set status as Publish. If you want to manually review post and after that publish it or not, set status to Pending review."
+msgstr "Jeśli bardzo ufasz publikującym, ustaw tutaj status jako Opublikowano. Jeśli chcesz najpierw ręcznie przejrzeć wpis i dopiero po tym go opublikować lub nie, ustaw tutaj status jako Oczekuje na przegląd."
+
+#: premiumpost.php:325
+#@ pwdomain
+msgid "Publisher can be warned before his post will be set as Draft after publishing duration will be passed."
+msgstr "Publikujący mogą być uprzedzani zanim ich wpisy wrócą do statusu Szkic gdy termin publikacji zostanie przekroczony. "
+
+#: premiumpost.php:342
+#@ pwdomain
+msgid "This account will collect deposits from publishers. and you will take it out anytime you want."
+msgstr "Konto to będzie gromadziło wszelkie wpłaty od publikujących. Będziesz mógł wypłacić je kiedykolwiek chcesz."
+
+#: premiumpost.php:341
+#@ pwdomain
+msgid "If you do not have Transferuj.pl account,"
+msgstr "Jeśli nie masz konta w Transferuj.pl,"
+
+#: premiumpost.php:341
+#@ pwdomain
+msgid "create it</a> and type acoount ID in this field"
+msgstr "załóż je tutaj</a> i wpisz powyżej jego identyfikator."
+
+#: premiumpost.php:73
+#@ pwdomain
+msgid "Hide descriptions"
+msgstr "Ukryj wyjaśnienia"
+
+#. translators: plugin header field 'Name'
+#: premiumpost.php:0
+#@ pwdomain
+msgid "Premium Post"
+msgstr ""
+
+#. translators: plugin header field 'Description'
+#: premiumpost.php:0
+#@ pwdomain
+msgid "Allows site visitors to publish their articles after payment."
+msgstr "Pozwala odwiedzającym stronę publikować własne artykuły po uiszczeniu opłaty."
+
+#. translators: plugin header field 'Version'
+#: premiumpost.php:0
+#@ pwdomain
+msgid "1.0"
+msgstr ""
+
