@@ -102,6 +102,9 @@ function pw_admin_init() {
     add_settings_field( 'field-eight', __('After payment change post status to', 'pwdomain'), 'pw_field_eight_callback', 'premium-post', 'pw-section-three' );
     add_settings_field( 'field-nine', __('Send remind to author', 'pwdomain'), 'pw_field_nine_callback', 'premium-post', 'pw-section-three' );
 
+	add_settings_section( 'pw-section-image', __('Uploading attachments', 'pwdomain'), 'pw_section_image_callback', 'premium-post' );
+	add_settings_field( 'field-image', __('Enable attachments', 'pwdomain'), 'pw_field_image_callback', 'premium-post', 'pw-section-image' );
+
     add_settings_section( 'pw-section-four', __('Payment service', 'pwdomain'), 'pw_section_four_callback', 'premium-post' );
     add_settings_field( 'field-ten', __('ID in transferuj.pl service', 'pwdomain'), 'pw_field_ten_callback', 'premium-post', 'pw-section-four' );
 
@@ -329,6 +332,23 @@ function pw_field_nine_callback() {
     <?php
 }
 
+function pw_section_image_callback() {
+
+}
+
+function pw_field_image_callback() {
+	$setting = (array) get_option( 'pw-setting' );
+	$enableAttachment = esc_attr($setting['enableAttachment']);
+
+	?>
+	<input type="checkbox" name="pw-setting[enableAttachment]" value="enable" <?php checked('enable', $enableAttachment); ?>
+	<p class="description">
+		<?php _e('Select if you want to enable attachments upload,', 'pwdomain'); ?>
+	</p>
+	<?php
+
+}
+
 function pw_section_four_callback() {
 	// echo "test";
 }
@@ -472,6 +492,21 @@ function pw_stronaForm($content) {
     	$email = $_POST['emailAutora'];
     }
 
+
+
+    $poleimage = '';
+	$enableAttachment = esc_attr($setting['enableAttachment']);
+	if ($enableAttachment == 'enable') {
+		$poleimage = "
+	        <fieldset class='image'>
+	            <label>".__('Image', 'pwdomain')."</label>
+	            <input type='file' name='attachedImage' > 
+	        </fieldset>    
+	    ";
+	}
+
+
+
     $poleemail = "
     	<fieldset class='email'>
     		<label>".__('Email', 'pwdomain')."</label>
@@ -480,7 +515,7 @@ function pw_stronaForm($content) {
     ";
 
 	$form = "
-<form id='pwDodajWpisForm' method='post'>
+<form id='pwDodajWpisForm' method='post' enctype='multipart/form-data'>
 	<fieldset>
 		<label>".__('Post title', 'pwdomain')."</label>
 		<input type='text' name='pwPostTitle' value='".$_POST['pwPostTitle']."'>
@@ -495,6 +530,8 @@ function pw_stronaForm($content) {
 	".$menuKategorii."
 
 	".$poleemail."
+	
+	".$poleimage."
 
 	".$termsHtml."
 
@@ -600,6 +637,28 @@ function pw_odbierzForm() {
 
 	if (!empty($kategorie)) {
 		wp_set_post_terms( $idWpisu, $kategorie, $taxonomy );
+	}
+
+	if (!empty($_FILES['attachedImage']) && $setting['enableAttachment'] == 'enable') {
+
+		require_once( ABSPATH . 'wp-admin/includes/image.php' );
+		require_once( ABSPATH . 'wp-admin/includes/file.php' );
+		require_once( ABSPATH . 'wp-admin/includes/media.php' );
+
+		$file_type = wp_check_filetype($_FILES['attachedImage']['name'], array(
+			'jpg' => 'image/jpeg',
+			'png' => 'image/png',
+			'gif' => 'image/gif'
+		));
+
+		if ($file_type['ext']) {
+			$attachment_id = media_handle_upload( 'attachedImage', $idWpisu );
+
+			if (!is_wp_error($attachment_id)) {
+				add_post_meta($idWpisu, 'idpliku', $attachment_id);
+			}
+		}
+
 	}
 
 
@@ -906,4 +965,26 @@ function pw_zadaniaZaplanowane() {
 	}
 
 
+}
+
+add_filter('the_content', 'pw_wstaw_zdjecie');
+
+function pw_wstaw_zdjecie($content) {
+
+	$setting = (array) get_option( 'pw-setting' );
+
+	if ($setting['enableAttachment'] == 'enable') {
+		$post_id = get_the_ID();
+
+		$id_pliku = get_post_meta($post_id, 'idpliku', true);
+
+		if ($id_pliku) {
+			$image_html = wp_get_attachment_image($id_pliku, 'large');
+
+			$content .= $image_html;
+		}
+
+	}
+
+	return $content;
 }
